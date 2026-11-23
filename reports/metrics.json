@@ -1,0 +1,74 @@
+{
+  "model": "logistic_regression",
+  "cv_comparison": {
+    "logistic_regression": {
+      "roc_auc": 0.9323,
+      "roc_auc_std": 0.0032,
+      "f1": 0.7199,
+      "pr_auc": 0.825,
+      "seconds": 0.1
+    },
+    "random_forest": {
+      "roc_auc": 0.9242,
+      "roc_auc_std": 0.0045,
+      "f1": 0.707,
+      "pr_auc": 0.8002,
+      "seconds": 2.1
+    },
+    "gradient_boosting": {
+      "roc_auc": 0.9185,
+      "roc_auc_std": 0.0068,
+      "f1": 0.7057,
+      "pr_auc": 0.7939,
+      "seconds": 2.7
+    }
+  },
+  "test": {
+    "roc_auc": 0.9211,
+    "pr_auc": 0.7943,
+    "f1": 0.7167,
+    "threshold": 0.6451,
+    "report": {
+      "stays": {
+        "precision": 0.9309428950863213,
+        "recall": 0.8975672215108835,
+        "f1-score": 0.9139504563233377,
+        "support": 781.0
+      },
+      "dropout": {
+        "precision": 0.6761133603238867,
+        "recall": 0.7625570776255708,
+        "f1-score": 0.7167381974248928,
+        "support": 219.0
+      },
+      "accuracy": 0.868,
+      "macro avg": {
+        "precision": 0.8035281277051041,
+        "recall": 0.8300621495682272,
+        "f1-score": 0.8153443268741152,
+        "support": 1000.0
+      },
+      "weighted avg": {
+        "precision": 0.8751352269733481,
+        "recall": 0.868,
+        "f1-score": 0.8707609716245783,
+        "support": 1000.0
+      }
+    }
+  },
+  "importance": {
+    "failed_courses": 0.082,
+    "attendance_rate": 0.0276,
+    "gpa_sem2": 0.0227,
+    "age": 0.002,
+    "gpa_sem1": 0.0013,
+    "works_part_time": 0.0007,
+    "scholarship": 0.0002,
+    "faculty": 0.0,
+    "dormitory": 0.0,
+    "study_hours_week": -0.0001,
+    "tuition": -0.0002,
+    "commute_minutes": -0.0011,
+    "admission_score": -0.0013
+  }
+}
